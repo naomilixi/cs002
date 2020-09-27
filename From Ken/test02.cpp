@@ -3,11 +3,12 @@
 using namespace std;
 
 int funFactorial(int intParm) {
-  int intFactResult = 0;
+  int intFactResult = 1;
 
   // Change intFactResult
-
-
+  for (int i = 1; i <= intParm; i++) {
+    intFactResult *= i;
+  }
 
   return intFactResult;
 }
