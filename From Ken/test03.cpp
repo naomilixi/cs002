@@ -1,17 +1,15 @@
-// Function
+// Recursive Function
 #include <iostream>
 
 using namespace std;
 
 int funFactorial(int intParm) {
-  int intFactResult = 1;
-
-  // Change intFactResult
-  for (int i = 1; i <= intParm; i++) {
-    intFactResult *= i;
+  // Recursive Function
+  if (intParm == 1) {
+    return 1;
+  } else {
+    return intParm * funFactorial(intParm - 1);
   }
-
-  return intFactResult;
 }
 
 int main() {
